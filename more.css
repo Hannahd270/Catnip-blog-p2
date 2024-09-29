@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+.list2{
+	width:170px;
+		hieght:500px;
+	background-color:rgb(68,230,111,1.00);
+	border-radius: 25px;
+	float:left;
+	margin:0px 10px 10px 15px;
+	padding: 30px 30px 30px 30px;
+	
+}
