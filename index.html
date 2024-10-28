@@ -9,13 +9,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="moreinfo.html">
 <link rel="stylesheet" href="more.css">	
-</head>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.14.0/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+ <style>
+        .toggler { width: 500px; height: 200px; position: relative; }
+        #button { padding: .5em 1em; text-decoration: none; }
+        #effect { position: relative; }
+        .newClass { width: 240px; padding: 1em; letter-spacing: 0; margin: 0; }
+        .anotherNewClass { text-indent: 40px; letter-spacing: .2em; width: 410px; height: 100px; padding: 30px; margin: 10px; font-size: 1.1em; }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.0/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#button").on("click", function() {
+                $("#effect").switchClass("newClass", "anotherNewClass", 1000);
+            });
+        });
+    </script>
+
+
+  
+	</head>
+
+ 
 
 
 
 <body>
 	
-	<div id="container">
+	<div  class="flex-container" id="container">
 		<header>
 			<h1 class="handlee-regular" >YOU CAT TO BE KITTEN MEOW!!! &#128568</h1>
 			<h4>By: Hannah Deleon</h4>
@@ -30,8 +53,16 @@
   <li style="float:right"><a href="#about">About</a></li>
 </ul></nav>
 		<section>
-		<article class="left">MEOW-rvelous way to get your cat engaged…..
-</article><br>
+			<div class="toggler">
+                <div id="effect" class="left newClass">
+                    Cat-Tastic Way To Inter Active With Your Cat!!!
+                </div>  
+            </div>
+            <button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+
+	
+		<div id="effects" >	<article class="left" >MEOW-rvelous way to get your cat engaged…..
+		</article><br> </div>
 			<article class="form"> 
 				<form action="">
 					<label for="username">User Name:</label><br>

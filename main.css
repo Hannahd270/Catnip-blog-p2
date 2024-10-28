@@ -3,15 +3,31 @@
 *{
 	box-sizing: border-box;
 }
-body{background: url("image/catnip.png") no-repeat fixed top right;
-
-	
+body{background: url("image/catnip.png") no-repeat fixed top right;	
 }
-#container{
-	width:800px;
+#container{width:800px;
 	margin:0 auto;
 }
-.left{
+.flex-container {
+  min-height: 600px;
+		display:flex;
+		gap:20px;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+  
+}
+ 
+.flex-container > div {
+  
+  margin-center: 80px;
+  padding: 20px;
+  font-size: 30px;
+}
+  
+	.left{
 	width:680px;
 		hieght:500px;
 	background-color:rgba(53,252,80,1.00);
@@ -19,7 +35,7 @@ body{background: url("image/catnip.png") no-repeat fixed top right;
 	float:left;
 	margin:0px 10px 10px 15px;
 	padding: 30px 30px 30px 30px;
-	
+	flex:50%
 }
 .right{
 	width:880px;
@@ -29,13 +45,14 @@ body{background: url("image/catnip.png") no-repeat fixed top right;
 	float:right;
 	margin: 0px 10px 10px 15px;
 	padding: 30px 30px 30px 30px;
-	
+	flex:50%
 }
 
 footer{
 	background-color:pink;
 	clear:both;
 	display:block;
+	flex:50%
 }
 header  >h1{text-align:center;color:beige;
 	
@@ -44,6 +61,7 @@ header >h4{text-align: center}
 header {background-color: rgba(53,252,80,1.00) }
 #container .right{
 	background-color: rgba(150,248,154,1.00);
+	flex:50%
 }
 a:link{
 	color:rgba(5,50,3,1.00);
@@ -65,7 +83,7 @@ a:hover{
 	float:left;
 	margin:0px 10px 10px 15px;
 	padding: 30px 30px 30px 30px;
-	
+	flex:50%
 	
 	
 }
@@ -76,6 +94,7 @@ nav ul {
   padding: 0;
   overflow: hidden;
   background-color: #FFB6C1; /* Light pink background */
+	flex:50%
 }
 
 nav li {
@@ -85,6 +104,7 @@ nav li {
 
 nav li:last-child {
   border-right: none;
+	flex:50%
 }
 
 nav li a {
@@ -93,6 +113,7 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+	flex:50%
 }
 
 nav li a:hover:not(.active) {
@@ -102,11 +123,16 @@ nav li a:hover:not(.active) {
 .active {
   background-color: #FF1493; /* A vibrant pink for the active state */
 }
-.form{width:680px;
+.form{width:380px;
 	hieght:500px;
 	background-color:rgba(53,252,80,1.00);
 	border-radius: 25px;
 	float:left;
 	margin:0px 10px 10px 15px;
 	padding: 30px 30px 30px 30px;
+	flex:50%
 	}
+@media (max-width: 799px) {
+	.flex-container {
+    flex-direction: column;
+	}}
