@@ -3,7 +3,7 @@
 *{
 	box-sizing: border-box;
 }
-body{background: url("catnip.png") no-repeat fixed top right;
+body{background: url("image/catnip.png") no-repeat fixed top right;
 
 	
 }
@@ -37,7 +37,7 @@ footer{
 	clear:both;
 	display:block;
 }
-header  >h1{text-align:center;color:black;
+header  >h1{text-align:center;color:beige;
 	
 }
 header >h4{text-align: center}
@@ -59,7 +59,7 @@ a:hover{
 }
 .list{
 	width:170px;
-		hieght:500px;
+	hieght:500px;
 	background-color:rgba(53,252,80,1.00);
 	border-radius: 25px;
 	float:left;
@@ -69,3 +69,44 @@ a:hover{
 	
 	
 }
+/*nav bar*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFB6C1; /* Light pink background */
+}
+
+nav li {
+  float: left;
+  border-right: 1px solid #FF69B4; /* A slightly darker pink for the border */
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav li a {
+  display:block;
+  color: white; /* White font color */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+ background-color: #FF69B4; /* Darker pink on hover */
+}
+
+.active {
+  background-color: #FF1493; /* A vibrant pink for the active state */
+}
+.form{width:680px;
+	hieght:500px;
+	background-color:rgba(53,252,80,1.00);
+	border-radius: 25px;
+	float:left;
+	margin:0px 10px 10px 15px;
+	padding: 30px 30px 30px 30px;
+	}

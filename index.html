@@ -7,26 +7,41 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="moreinfo.html">
-
-
-	
-	
-	
+<link rel="stylesheet" href="moreinfo.html">
+<link rel="stylesheet" href="more.css">	
 </head>
 
+
+
 <body>
+	
 	<div id="container">
 		<header>
-			<h1 class="handlee-regular">YOU CAT TO BE KITTEN MEOW!!! &#128568</h1>
+			<h1 class="handlee-regular" >YOU CAT TO BE KITTEN MEOW!!! &#128568</h1>
 			<h4>By: Hannah Deleon</h4>
 
 		
 		</header>
-		<nav></nav>
+		
+		<nav><ul> 
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="moreinfo.html">More Information</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul></nav>
 		<section>
 		<article class="left">MEOW-rvelous way to get your cat engaged…..
-</article>
+</article><br>
+			<article class="form"> 
+				<form action="">
+					<label for="username">User Name:</label><br>
+					<input type="text" id="username" name="username"><br>
+				     <label for="password">Password:</label><br>
+					<input type="text" id="password" name="password"><br>
+					<input type="submit" value="Submit">
+				</form>
+			</article>
+			
 			<article class="right">
 			<p>All kids have their favorite toys. When I brought Usagi into my family, I introduced her to a few toys. I wanted her to also experience catnip and have that boost of joy that every cat gets when it first comes out of that package. After several different toys, Usagi would fall back on her favorite toys that were non catnip. I then went on a search to find  different catnip options that would allow Usagi to still experience catnip along with her favorite non catnip toys.
 </p>
@@ -43,7 +58,7 @@
 			</article>
 			
 			<article class="below">
-		    <img src="smartykat.JPG" width="293" height="273" alt="smartykat catnip link" usemap="#Smartykat Catnip"/>
+		    <img src="image/smartykat.JPG" width="293" height="273" alt="smartykat catnip link" usemap="#Smartykat Catnip"/>
 			<map name="Smartykat Catnip">
 				<area shape="rect" coords="3,58,290,254" alt="Smartykat Catnip" href="https://smartykat.com/products/catnip-mist-catnip-infused-spray-0-5-ounce/">
 				</map>
@@ -65,7 +80,11 @@
 		
 		
 		</section>
-		<footer>Copyright Hannah De Leon 2024</footer>
+		<footer>Copyright Hannah De Leon 2024<br><audio controls>
+        <source src="assets/cat_meow.mp3" type="audio/ogg">
+        Your browser does not support the audio element.
+        </audio>
+        </footer>
 		
 	</div>
 
